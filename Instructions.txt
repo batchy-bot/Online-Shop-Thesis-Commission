@@ -1,0 +1,3 @@
+Bali amo ni gue. Online ordering system siya kag need ni owner kag customer mag log in ka account para ka gamit sang system. Bali si customer, ordering lang gid iya ma access kag si owner kag employee, access niya tanan pati information ni customer. Isa lang man ang product oa business gue, dressed chicken lang gid. Tapos antis ni customer mag place order, dapat may order summary nga ma pop up sa system para aware si customer ka order details kag kung pila iya balayran. Pagtapos place ka order, bali ka decide si owner kung e accept na or e reject na ang order
+
+Bali HTML sa online function na gue kag Javascript sa offline. Kag ang offline function na is mag organize ka sales data para ka generate sales report
