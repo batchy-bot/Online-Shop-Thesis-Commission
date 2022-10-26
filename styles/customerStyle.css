@@ -1,7 +1,7 @@
 @import url(./cartModalStyle.css);
 :root{
-    --base: #171717;
-    --baseHovered: #2c2c2c;
+    --base: #2c2c2c;
+    --baseHovered: #575757;
 }
 * {
     margin: 0;
@@ -190,6 +190,7 @@ a {
     box-sizing: border-box;
     transition: all;
     transition-duration: .5s;
+    
 }
 
 .buy-now-btn:hover {

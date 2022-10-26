@@ -11,9 +11,29 @@
 
 <body>
     <div id="header-container">
-        <input id="search-bar" type="text" placeholder="Search..." />
-        <img id="cart-btn" src="./res/icons/shopping-cart-icon.png"></>
+        <div id="header-upper-details">
+            <div id="login-signup">
+                <a href="">Signup </a>|<a href=""> Login</a>
+            </div>
+        </div>
+        <div id="header-lower-details">
+            <h2>Online Shop</h2>
+            <div id="search-bar">
+                <input id="search-bar" type="text" placeholder="Search Product..." />
+                <div id="search-btn">
+                    <img src="./res/icons/search-icon.png" alt="">
+                </div>
+            </div>
+            <div id="cart-btn">
+                <img src="./res/icons/shopping-cart-icon.png">
+                <span id="cart-num">0</span>
+            </div>
+            <div id="profile-area">
+                <img src="" alt="">
+            </div>
+        </div>
     </div>
+
     <div id="home-body-container">
         <form id="login-form" action="">
             <input type="text" placeholder="Username">
