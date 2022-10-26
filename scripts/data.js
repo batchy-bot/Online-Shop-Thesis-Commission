@@ -4,43 +4,43 @@ let productsAvailable = [
         sellerID: 1245,
         productName: 'Dressed Chicken',
         price: 160.50,
-        imgSrc: '../res/images/fresh-whole-chicken.jpg'
+        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/whole-chicken-leg-quarters-300x300.jpg'
     },{
         productID: 1112,
         sellerID: 1245,
         productName: 'Fresh Gizzard',
         price: 89.50,
-        imgSrc: '../res/images/fresh-chicken-gizzard.jpg'
+        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/Fresh-Chicken-Gizzard-300x300.jpg'
     },{
         productID: 1113,
         sellerID: 1245,
         productName: 'Two Joint Chicken Wings',
         price: 100.00,
-        imgSrc: '../res/images/two-joint-chicken-wings.jpg'
+        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/Two-Joint-Chicken-Wings-300x300.jpg'
     },{
         productID: 1114,
         sellerID: 1245,
         productName: 'Fresh Chicken Drumsticks',
         price: 99.50,
-        imgSrc: '../res/images/fresh-chicken-drumsticks.jpg'
+        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/Chicken-Drumsticks-300x300.jpg'
     },{
         productID: 1115,
         sellerID: 1245,
         productName: 'Chicken Feet Paws',
         price: 99.50,
-        imgSrc: '../res/images/frozen-chicken-feet.jpg'
+        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/Chicken-Drumsticks-300x300.jpg'
     },{
         productID: 1116,
         sellerID: 1245,
         productName: 'Chicken Leg Quarters',
         price: 99.50,
-        imgSrc: '../res/images/whole-chicken-leg-quarters.jpg'
+        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/whole-chicken-leg-quarters-300x300.jpg'
     },{
         productID: 1117,
         sellerID: 1245,
         productName: 'Boneless Skinless Whole Chicken Breast',
         price: 99.50,
-        imgSrc: '../res/images/fresh-chicken-breast.jpg'
+        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/Fresh-Chicken-Breast-300x300.jpg'
     }
 ]
 

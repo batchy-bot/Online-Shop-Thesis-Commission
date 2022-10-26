@@ -107,6 +107,9 @@ a {
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
+    flex-direction: row;
+    align-content:flex-start;
 }
 
 .product {
