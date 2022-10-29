@@ -99,6 +99,28 @@ a {
     justify-content: center;
     align-items: center;
 }
+#profile-area {
+    color: white;
+}
+#profile-area #profile-area-dropdown{
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    list-style-type: none;
+    padding-top: 20px;
+    padding: 0 20px;
+    height: 50px;
+    display: none;
+    align-items: center;
+}
+
+#profile-area #profile-area-dropdown ul li{
+    list-style-type: none;
+}
+#profile-area #profile-area-dropdown ul li a {
+    color: black;
+}
 
 #products-container {
     background: #e7e7e7;

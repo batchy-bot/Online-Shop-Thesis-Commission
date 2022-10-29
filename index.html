@@ -5,137 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/customerStyle.css">
-    <title>Customer Page</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Home - Online Shop</title>
 </head>
 
 <body>
-    <!-- Start of Cart Modal -->
-    <div id="cart-modal-container">
-
-        <div id="cart-modal-content">
-
-            <div id="cart-modal-header">
-                <img src="./res/icons/shopping-cart-icon.png" alt="">
-                <h5>My Cart</h5>
-            </div>
-            <div id="cart-modal-body">
-
-                <div class="simple-card-outer simple-card">
-                    <div class="simple-card-content1">
-                        <input type="checkbox">
-                        Product</div>
-                    <div class="simple-card-content2">Unit Price</div>
-                    <div class="simple-card-content3">Quantity</div>
-                    <div class="simple-card-content4">Total Price</div>
-                </div>
-                <!-- Cart Separate Shop-->
-                <div id="cart-items-container">
-                    <div class="cart-shop">
-    
-                        <div class="simple-card">
-                            <div class="simple-card-content1">
-                                <div class="cart-product-detail">
-                                    <input type="checkbox">
-                                    <img src="./res/images/fresh-whole-chicken.jpg">
-                                    <div class="cart-product-name">
-                                        Dressed Chicken
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="simple-card-content2">P288</div>
-                            <div class="simple-card-content3">
-                                1
-                            </div>
-                            <div class="simple-card-content4">
-                                P288
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-                <!-- Cart Separate Shop END-->
-                
-            </div>
-
-            <div id="cart-modal-totals">
-                <div id="cart-modal-total-section">
-                    <h3>Total (0 item): <span id="checkout-total-num">P0</span> </h3>
-                    <button id="checkout-btn">Check Out</button>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-    <!-- End of Cart Modal-->
-
-    <!-- Start of Checkout Modal Section-->
-    <div id="checkout-modal-container">
-        <div id="checkout-modal-card">
-            <div id="checkout-modal-header">
-                <h2>Checkout</h2>
-                <div id="modal-exit-btn">X</div>
-            </div>
-
-            <div id="checkout-modal-content">
-                <!-- Delivery Address-->
-                <div class="checkout-content-categ">
-                    <h5 class="checkout-content-header checkout-green-title">Delivery Address</h5>
-                    <div id="checkout-delivery-address-details">
-                        <div id="checkout-recipient-name">
-                            Kyle Revin Alimpuangon
-                        </div>
-                        <div id="checkout-full-address">
-                            N/A, Bagacay West, Maasin, Visayas, Iloilo 5030
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Products Ordered-->
-                <div class="checkout-content-categ">
-                    <div id="products-ordered-contents">
-                        <div class="product-ordered-content product-detail">
-                            <h4>Products Ordered</h4>
-                            <div id="product-shop-name">Seller Name</div>
-                            <div id="ordered-product-detail">
-                                <img src="./res/images/fresh-whole-chicken.jpg">
-                                <h5>Dressed Chicken</h5>
-                            </div>
-                        </div>
-                        <div class="product-ordered-content">
-                            <h5>Unit Price</h5>
-                            <div class="ordered-value-div">₱266</div>
-                        </div>
-                        <div class="product-ordered-content">
-                            <h5>Amount</h5>
-                            <div class="ordered-value-div">1</div>
-                        </div>
-                        <div class="product-ordered-content">
-                            <h5>Item Subtotal</h5>
-                            <div class="ordered-value-div">₱266</div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-            </div>
-
-            <div id="checkout-modal-footer">
-                <div id="place-order-button">
-                    Place Order
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- End of Modal Section-->
-
-
     <div id="header-container">
-        
+        <div id="header-upper-details">
+            <div id="login-signup">
+                <a href="">Signup </a>|<a href=""> Login</a>
+            </div>
+        </div>
         <div id="header-lower-details">
             <h2>Online Shop</h2>
             <div id="search-bar">
@@ -144,38 +24,41 @@
                     <img src="./res/icons/search-icon.png" alt="">
                 </div>
             </div>
+            <!--
+                
             <div id="cart-btn">
                 <img src="./res/icons/shopping-cart-icon.png">
                 <span id="cart-num">0</span>
             </div>
+            -->
             <div id="profile-area">
                 <img src="" alt="">
             </div>
         </div>
     </div>
 
-
-
-    <div id="customer-body-container">
-        <div id="products-container">
-
-            <div class="product">
-                <img class="product-image" src="./res/images/fresh-whole-chicken.jpg" />
-                <div class="product-details">
-                    <h4>P 99.00</h4>
-                    <h6>Dressed Chicken</h6>
-                </div>
-                <div class="product-buttons">
-                    <button class="add-to-cart-btn">Add to cart</button>
-                    <button class="buy-now-btn">Buy Now</button>
-                </div>
-            </div>
-
-        </div>
+    <div id="home-body-container">
+        <form id="login-form" action="">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit">LOGIN</button>
+            <span id="loading-text">Loading...</span>
+        </form>
     </div>
-    <div id="unecessary-footer"></div>
-    <script src="./scripts/script.js" type="module"></script>
-    <script src="./scripts/data.js" type="module"></script>
+
+
+    <script>
+        const loginForm = document.querySelector('#login-form');
+        const loadingText = document.querySelector('#loading-text');
+        loginForm.addEventListener('submit', e => {
+            e.preventDefault()
+            loadingText.style.display = 'flex'
+            setTimeout(() => {
+                window.open('./customerPage.html', "_self")
+            }, 2000);
+        })
+
+    </script>
 </body>
 
 </html>

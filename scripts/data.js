@@ -63,4 +63,6 @@ let userAccounts = [
 
 let cartData = []
 
+let currentUser = userAccounts[0];
+
 export {productsAvailable, userAccounts, cartData };
