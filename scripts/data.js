@@ -4,7 +4,7 @@ let productsAvailable = [
         sellerID: 1245,
         productName: 'Dressed Chicken',
         price: 160.50,
-        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/whole-chicken-leg-quarters-300x300.jpg'
+        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/fresh-whole-chicken.jpg'
     },{
         productID: 1112,
         sellerID: 1245,
@@ -28,7 +28,7 @@ let productsAvailable = [
         sellerID: 1245,
         productName: 'Chicken Feet Paws',
         price: 99.50,
-        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/Chicken-Drumsticks-300x300.jpg'
+        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/Frozen-Chicken-Feet-300x300.jpg'
     },{
         productID: 1116,
         sellerID: 1245,
