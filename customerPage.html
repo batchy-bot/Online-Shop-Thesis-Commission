@@ -10,6 +10,15 @@
 </head>
 
 <body>
+
+    <!-- Start of View Item Modal -->
+    <div id="view-item-modal-container">
+        <div id="view-item-modal-content">
+            
+        </div>
+    </div>
+    <!-- End of View Item Modal -->
+
     <!-- Start of Cart Modal -->
     <div id="cart-modal-container">
 
@@ -85,10 +94,10 @@
                     <h5 class="checkout-content-header checkout-green-title">Delivery Address</h5>
                     <div id="checkout-delivery-address-details">
                         <div id="checkout-recipient-name">
-                            Kyle Revin Alimpuangon
+                            John DaPlaceholder
                         </div>
                         <div id="checkout-full-address">
-                            N/A, Bagacay West, Maasin, Visayas, Iloilo 5030
+                            N/A, Naslo, Maasin, Visayas, Iloilo 5030
                         </div>
                     </div>
                 </div>
@@ -137,7 +146,7 @@
     <div id="header-container">
 
         <div id="header-lower-details">
-            <h2>Online Shop</h2>
+            <h2>Online Store</h2>
             <div id="search-bar">
                 <input id="search-bar" type="text" placeholder="Search Product..." />
                 <div id="search-btn">
@@ -149,10 +158,12 @@
                 <span id="cart-num">0</span>
             </div>
             <div id="profile-area">
-                <img src="./" alt="Profile">
+                <img src="./res/icons/profile-icon.png" alt="Profile">
                 <div id="profile-area-dropdown">
                     <ul>
-                        <li><a href="./index.html">Signout</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">My Purchase</a></li>
+                        <li><a id='logout-btn' href="./index.html">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -162,8 +173,11 @@
 
 
     <div id="customer-body-container">
+        <div id="products-header">
+            <h4>Available Products</h4>
+        </div>
         <div id="products-container">
-
+            
             <div class="product">
                 <img class="product-image" src="./res/images/fresh-whole-chicken.jpg" />
                 <div class="product-details">
@@ -178,7 +192,9 @@
 
         </div>
     </div>
-    <div id="unecessary-footer"></div>
+    <div id="unecessary-footer">
+        <h4>About Online Store</h4>
+    </div>
     <script src="./scripts/script.js" type="module"></script>
     <script src="./scripts/data.js" type="module"></script>
 </body>

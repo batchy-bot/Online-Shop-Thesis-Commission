@@ -57,7 +57,7 @@ for (let prod of data.productsAvailable) {
     </div>
         <div class="product-buttons">
             <button class="add-to-cart-btn" productID = ${prod.productID}>Add to cart</button>
-            <button class="buy-now-btn">Buy Now</button>
+            <button class="buy-now-btn">Order Now</button>
         </div>
     </div>`
 
@@ -124,7 +124,7 @@ function updateListeners() {
     buyNowBtns.forEach(buyNowBtn => {
         buyNowBtn.addEventListener('click', e => {
             checkoutModalContainer.style.display = 'flex'
-            
+
         })
     })
 
@@ -150,6 +150,7 @@ function updateListeners() {
                     // checks if this product is not yet in cartData
                     if (!data.cartData.includes(prod)) {
                         prod['quantity'] = 1;
+                        prod['totalPrice'] = prod['quantity'] * prod.price
                         data.cartData.push(prod)
                     } else {
                         // if not then this accesses that product and modifies its quantity value
@@ -168,17 +169,36 @@ function updateListeners() {
         })
 
 
-        const cartTotalPrice = document.querySelector('#cart-total-price');
-
-        let cartProductCheckBoxes = document.querySelectorAll('.cart-product-checkbox');
-
-        console.clear();
-        console.log('Cart Length: ')
-        console.log(data.cartData.length);
 
     })
+
 
     modalExitBtn.addEventListener('click', e => {
         checkoutModalContainer.style.display = 'none'
     })
+
+
 }
+
+const cartModalContent = document.querySelector('#cart-modal-content');
+let cartTotalNum = 0;
+let cartTotalPrice = document.querySelector('#cart-total-price');
+
+let checkedID = [];
+
+cartModalContent.addEventListener('change', e => {
+
+  
+
+    const cartProductCheckboxes = document.querySelectorAll('.cart-product-checkbox');
+    for (let cbox of cartProductCheckboxes) {
+        if (cbox.checked) {
+            let targetID = cbox.parentElement.parentElement.parentElement.getAttribute('productID');
+
+            checkedID.push(targetID)
+        }else{
+            let targetID = cbox.parentElement.parentElement.parentElement.getAttribute('productID');
+        }
+    }
+    cartTotalPrice.innerText = cartTotalNum
+})

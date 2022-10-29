@@ -41,6 +41,12 @@ let productsAvailable = [
         productName: 'Boneless Skinless Whole Chicken Breast',
         price: 99.50,
         imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/Fresh-Chicken-Breast-300x300.jpg'
+    },{
+        productID: 1118,
+        sellerID: 1245,
+        productName: 'Chicken Feet Paws',
+        price: 99.50,
+        imgSrc: 'https://brazilfrozenfoodbrands.com/wp-content/uploads/2019/12/Chicken-Wings-and-parts-300x300.jpg'
     }
 ]
 

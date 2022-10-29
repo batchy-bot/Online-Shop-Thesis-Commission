@@ -20,8 +20,18 @@ body{
     background-size: cover;
 }
 
+#welcome-page-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url(../res/images/bg1.jpg);
+    background-size: cover;
+    z-index: 2;
+}
+
 /* Header Start*/
 #header-container {
+    z-index: 10;
     top: 0;
     position: sticky;
 }
@@ -106,6 +116,7 @@ body{
     box-sizing: border-box;
 }
 #login-form {
+    z-index: 3;
     background: rgba(0,0,0,.8);
     border-radius: 10px;
     border: 1px solid grey;
@@ -139,4 +150,9 @@ body{
 #loading-text {
     display: none;
     color: white;
+}
+#unecessary-footer {
+    background: var(--base);
+    height: 10vh;
+    width: 100vw;
 }

@@ -1,0 +1,16 @@
+#view-item-modal-container {
+    z-index: 100;
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#view-item-modal-content {
+    background: white;
+    width: 900px;
+    height: 650px;
+}
