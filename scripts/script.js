@@ -83,14 +83,12 @@ function updateRender() {
     if (data.cartData.length > 0) cartItemsContainer.innerHTML += `<div id="cart-shop-name"> <h4>Amazon Mall</h4></div`
 
     for (let cartProd of data.cartData) {
-        let quantity = cartProd.quantity;
         let cartItemString = `<div class="cart-shop">
     <div class="simple-card" productID = '${cartProd.productID}'>
         <div class="simple-card-content1">
             <div class="cart-product-detail">
                 <input class="cart-product-checkbox" type="checkbox">
                 <img src="${cartProd.imgSrc}">
-                <input type='number'/>
                 <div class="cart-product-name">
                     ${cartProd.productName}
                 </div>
@@ -98,10 +96,11 @@ function updateRender() {
         </div>
         <div class="simple-card-content2">P${cartProd.price}</div>
         <div class="simple-card-content3">
-            ${quantity}
+        <input type='number' value='${cartProd.quantity}'/>
+
         </div>
         <div class="simple-card-content4">
-            ${cartProd.price * quantity}
+            ${cartProd.price * cartProd.quantity}
         </div>
     </div>
 </div>`
@@ -177,6 +176,23 @@ function updateListeners() {
         checkoutModalContainer.style.display = 'none'
     })
 
+    const products = document.querySelectorAll('.product')
+    const viewItemModalContainer = document.querySelector('#view-item-modal-container');
+
+    viewItemModalContainer.addEventListener('click', e => {
+        if(e.target == viewItemModalContainer){
+            viewItemModalContainer.style.display = 'none'
+        }
+    })
+
+    for(let product of products){
+        product.addEventListener('click', e => {
+            if(e.target.getAttribute('class') != 'add-to-cart-btn' && e.target.getAttribute('class') != 'buy-now-btn'){
+                viewItemModalContainer.style.display = 'flex'
+            }
+        })
+    }
+
 
 }
 
@@ -202,3 +218,7 @@ cartModalContent.addEventListener('change', e => {
     }
     cartTotalPrice.innerText = cartTotalNum
 })
+
+const placeOrderBtn = document.querySelector('#place-order-button');
+
+placeOrderBtn

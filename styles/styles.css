@@ -18,6 +18,7 @@ a {
 body{
     background: url(../res/images/bg1.jpg);
     background-size: cover;
+    overflow-x: hidden;
 }
 
 #welcome-page-background {

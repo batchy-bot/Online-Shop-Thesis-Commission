@@ -13,4 +13,28 @@
     background: white;
     width: 900px;
     height: 650px;
+    display: flex;
+    align-items: center;
+}
+#view-item-image-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#view-item-image-section img {
+    width: 90%;
+}
+#view-item-details-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#view-item-details-section * {
+    margin: 20px;
 }
